@@ -25,7 +25,7 @@ function ubisGoogleFormToLineNotify() {
 //  Logger.log('all_message = ', all_message);
 //  Logger.log('image_id = ', image_id);
   
-  var token = "LFFBsbVKOXzlJOb3SslV6lhesuZT7RzbVF6YZBKcMPy";
+  var token = "xxx";
 //  var message = '';
 //  var IMAGE_URL = 'https://drive.google.com/uc?export=view&id='+ image_id;
     
@@ -56,7 +56,7 @@ function ubisGoogleFormToLineNotify() {
 
     function onFormSubmit() {
 
-        var form = FormApp.openById('1fvef_NOwdiWgdpRooRMa-Jy8mNtPgTngcQI_HFPQ-TE');
+        var form = FormApp.openById('xxx');
         var fRes = form.getResponses();
         
         var formResponse = fRes[fRes.length - 1];
@@ -77,10 +77,7 @@ function ubisGoogleFormToLineNotify() {
         
         function sendLineNotify(message) {
         
-        //For IT Dept: LFFBsbVKOXzlJOb3SslV6lhesuZT7RzbVF6YZBKcMPy
-        //For Testing: lU5OKQKL5awlRvaRm83HmjG35SSKWeAu8bMx92alf2O
-        
-        var token = ["LFFBsbVKOXzlJOb3SslV6lhesuZT7RzbVF6YZBKcMPy"]; 
+        var token = ["xxx"]; 
         var options = {
         "method": "post",
         "payload": "message=" + message,
